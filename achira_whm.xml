@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<spellcast>
+  <guildwork
+   character="Achira"
+   server="Ragnarok"
+   description="White Mage XML"
+   job="WHM"
+   />
+
+   <config
+    Debug="false"
+    HideErrors="false"
+    ShowGearSwaps="false"
+    AutoLoadXML="true"
+    RequireVersion="2.44"
+    />
+    <variables>
+      <!--Spellcast has enough built in variables, you don't need them. so quit it.-->
+    </variables>
+
+    <sets>
+      <group name="WHM Default" default="yes">
+        <set name="idle|aftercast">
+          <main>Tamaxchi</main>
+          <sub>Sors Shield</sub>
+          <ammo>Incantor Stone</ammo>
+          <head>Gende. Caubeen</head>
+          <neck>Twilight Torque</neck>
+          <lear>Loquac. Earring</lear>
+          <rear>Merman's Earring</rear>
+          <body>Gendewitha Bliaut</body>
+          <hands>Serpentes Cuffs</hands>
+          <lring>Dark Ring</lring>
+          <rring>Defending Ring</rring>
+          <back>Repulse Mantle</back>
+          <waist>Slipor Sash</waist>
+          <legs>Nares Trews</legs>
+          <feet>Serpentes Sabots</feet>
+        </set>
+        <set name="run">
+          <feet>Paean boots</feet>
+        </set>
+
+        <set name="Engaged|Weaponskill" baseset="idle">
+          <main>Tamaxchi</main>
+          <sub>Sors Shield</sub>
+          <ammo>Incantor Stone</ammo>
+          <head>Gende. Caubeen</head>
+          <neck>Twilight Torque</neck>
+          <lear>Loquac. Earring</lear>
+          <rear>Celestial Earring</rear>
+          <body>Gendewitha Bliaut</body>
+          <hands>Gendewitha Gages</hands>
+          <lring>Dark Ring</lring>
+          <rring>Defending Ring</rring>
+          <back>Repulse Mantle</back>
+          <waist>Slipor Sash</waist>
+          <legs>Gendewitha Spats</legs>
+          <feet>Litany Clogs</feet>
+        </set>
+        
+        <set name="Resting">
+          <main>Owleyes</main>
+          <sub>Genbu's Shield</sub>
+          <ammo>Clarus Stone</ammo>
+          <waist>Cleric's Belt</waist>
+        </set>
+        
+        <set name="FastCast">
+          <main>Winged Wand</main>
+          <rring>Prolix Ring</rring>
+          <neck>Orison Locket</neck>
+          <waist>Witful Belt</waist>
+          <ammo>Incantor Stone</ammo>
+          <lear>Loquac. Earring</lear>
+          <hands>Gendewitha gages</hands>
+          <back>Swith Cape</back>
+          <legs>Orvail Pants +1</legs>
+          <feet>Litany Clogs</feet>
+        </set>
+        
+        <set name="FastCast-Stoneskin" baseset="FastCast">
+          <waist>Siegel Sash</waist>
+          <hands>Carapacho Cuffs</hands>
+          <legs>Haven Hose</legs>
+        </set>
+
+        <set name="FastCast-Cure" baseset="FastCast">
+          <main>Tamaxchi</main>
+          <sub>Sors Shield</sub>
+          <body>Nefer Kalasiris</body>
+          <legs>Orison pantaloons +2</legs>
+          <feet>Litany Clogs</feet>
+        </set>
+
+        <set name="Trigger-PhysicalDefense|pdt" baseset="Idle">
+          <head>Gende. Caubeen</head>
+          <neck>Twilight Torque</neck>
+          <rear>Merman's Earring</rear>
+          <hands>Gendewitha Gages</hands>
+          <lring>Dark Ring</lring>
+          <rring>Defending Ring</rring>
+          <back>Repulse Mantle</back>
+          <waist>Slipor Sash</waist>
+          <legs>Gendewitha Spats</legs>
+          <feet>Gende. Galoshes</feet>
+        </set>
+        
+        <set name="MagicalDefense|mdt" baseset="Idle">
+          <head>Gende. Caubeen</head>
+          <neck>Twilight Torque</neck>
+          <rear>Merman's Earring</rear>
+          <hands>Gendewitha Gages</hands>
+          <lring>Dark Ring</lring>
+          <rring>Defending Ring</rring>
+          <back>Repulse Mantle</back>
+          <waist>Slipor Sash</waist>
+          <legs>Gendewitha Spats</legs>
+          <feet>Gende. Galoshes</feet>
+        </set>
+        
+        <set name="JobAbility" baseset="FastCast">
+        </set>
+        
+        <set name="JobAbility-Devotion" baseset="Idle">
+        </set>
+        
+        <set name="JobAbility-Martyr" baseset="Idle">
+          <hands>Piety Mitts</hands>
+          <!--Max HP-->
+        </set>
+
+        <set name="JobAbility-Afflatus Solace|JobAbility-Afflatus Misery" baseset="idle">
+         <body>Orison bliaud +2</body>
+       </set>
+
+       
+       <set name="JobAbility-Divine Seal|JobAbility-Divine Caress" baseset="fastcast">
+        <hands>Orison mitts +2</hands>
+      </set>
+      
+      <set name="JobAbility-Benediction">
+        <body>Piety Briault</body>
+      </set>
+      
+      <set name="WhiteMagic">
+        <main>Tamaxchi</main>
+        <sub>Sors Shield</sub>      
+        <ammo>Oreiad's Tathlum</ammo>
+        <head>Buremte Hat</head>
+        <lear>Lifestorm Earring</lear>
+        <rear>Celestial Earring</rear>
+        <body>Gendewitha bliaut</body>
+        <hands>Gendewitha Gages</hands>
+        <lring>Aquasoul Ring</lring>
+        <back>Refraction Cape</back>
+        <legs>Gendewitha Spats</legs>
+        <feet>Gende. Galoshes</feet>
+        <rring>Aquasoul Ring</rring>
+      </set>
+
+      <set name="WhiteMagic-DivineMagic">
+        <neck>Divine Torque</neck>
+        <lear>Divine Earring</lear>
+        <!--body>Bokwus Robe</body>
+        <hands>Quauhpilli Gloves</hands-->
+        <lring>Strendu Ring</lring>
+        <rring>Mediator's Ring</rring>
+        <waist>Bishop's Sash</waist>
+        <legs>Orsn. Pantaln. +2</legs>
+      </set>      
+
+      <set name="WhiteMagic-DivineMagic-MAtk">
+        <main>Tamaxchi</main>
+        <neck>Stoicheion Medal</neck>
+        <lear>Hecate's Earring</lear>
+        <rear>Strophadic Earring</rear>
+        <lring>Strendu Ring</lring>
+        <rring>Archon Ring</rring>
+        <waist>Othila Sash</waist>
+        <head>Bokwus Circlet</head>
+      </set>
+
+      <set name="WhiteMagic-HealingMagic">
+        <main>Beneficus</main>
+        <ammo>Oreiad's Tathlum</ammo>
+        <head>Hyksos Khat</head>
+        <neck>Healing Torque</neck>
+        <lear>Beatific Earring</lear>
+        <rear>Celestial Earring</rear>
+        <body>Orison Bliaud +2</body>
+        <hands>Ayao's Gages</hands>
+        <lring>Sirona's Ring</lring>
+        <rring>Mediator's Ring</rring>
+        <back>Tempered Cape</back>
+        <waist>Bishop's Sash</waist>
+        <legs>Piety Pantaloons</legs>
+      </set>
+
+      <set name="Cure|Cure*">
+        <main>Tamaxchi</main>
+        <sub>Sors Shield</sub>
+        <head>Gende. Caubeen</head>
+        <ammo>Oreiad's Tathlum</ammo>
+        <neck>Fylgja Torque +1</neck>
+        <lear>Beatific Earring</lear>
+        <rear>Roundel Earring</rear>
+        <body>Orison Bliaud +2</body>
+        <hands>Bokwus gloves</hands>
+        <lring>Sirona's Ring</lring>
+        <rring>Aquasoul Ring</rring>
+        <back>Tempered Cape</back>
+        <waist>Bishop's Sash</waist>
+        <legs>Orsn. Pantaln. +2</legs>
+        <feet>Litany Clogs</feet>
+      </set>
+      
+      <set name="Cursna|*na" baseset="WhiteMagic-HealingMagic">
+      </set>
+
+      <set name="WhiteMagic-EnhancingMagic">
+        <main>Beneficus</main>
+        <ammo>Oreiad's Tathlum</ammo>
+        <head>Gende. Caubeen</head>
+        <neck>Enhancing Torque</neck>
+        <lear>Celestial Earring</lear>
+        <body>Hyksos Robe</body>
+        <hands>Ayao's Gages</hands>
+        <lring>Aquasoul ring</lring>
+        <rring>Star Ring</rring>
+        <back>Merciful Cape</back>
+        <waist>Olympus Sash</waist>
+        <legs>Piety Pantaloons</legs>
+        <feet>Orsn. Duckbills +2</feet>
+        <rear>Augmenting Earring</rear>
+      </set>
+      
+      <set name="Protect" baseset="WhiteMagic-EnhancingMagic">
+        <feet>Piety Duckbills</feet>
+      </set>
+
+      <set name="Regen|Regen*">
+      	<body>Piety Briault</body>
+      	<hands>Orison mitts +2</hands>      	
+      </set>      
+      <set name="Stoneskin" baseset="WhiteMagic-EnhancingMagic">
+        <legs>Haven Hose</legs>
+        <rear>Earthcry Earring</rear>
+      </set>
+      <set name="Bar" baseset="WhiteMagic-EnhancingMagic">
+        <main>Beneficus</main>
+        <legs>Piety Pantaloons</legs>
+        <body>Orison Bliaud +2</body>
+        <head>Orison Cap +2</head>
+        <hands>Orison Mitts +2</hands>
+        <feet>Orison Duckbills +2</feet>
+      </set>
+
+      <set name="WhiteMagic-EnfeeblingMagic|EnfeeblingMagic">
+        <main>Soothsayer Staff</main>
+        <ammo>Oreiad's Tathlum</ammo>
+        <head>Hyksos Khat</head>
+        <neck>Weike Torque</neck>
+        <lear>Lifestorm earring</lear>
+        <rear>Psystorm earring</rear>
+        <body>Bokwus Robe</body>
+        <hands>Piety Mitts</hands>
+        <lring>Mediator's Ring</lring>
+        <rring>Strendu Ring</rring>
+        <back>Refraction Cape</back>
+        <waist>Casso Sash</waist>
+        <legs>Portent Pants</legs>
+      </set>
+      
+      <set name="BlackMagic" baseset="idle">
+       <ammo>Ombre tathlum</ammo>
+     </set>
+
+     <set name="BlackMagic-EnfeeblingMagic">
+      <ammo>Ombre Tathlum</ammo>
+      <head>Hyksos Khat</head>
+      <neck>Weike Torque</neck>
+      <lear>Lifestorm earring</lear>
+      <rear>Psystorm earring</rear>
+      <body>Bokwus Robe</body>
+      <hands>Piety Mitts</hands>
+      <lring>Mediator's Ring</lring>
+      <rring>Strendu Ring</rring>
+      <back>Refraction Cape</back>
+      <waist>Casso Sash</waist>
+      <legs>Orvail Pants</legs>
+      <feet>Chelona Boots</feet>
+    </set>
+    <set name="BlackMagic-ElementalMagic-MAtk" baseset="idle">
+    </set>
+    <set name="BlackMagic-ElementalMagic">
+    </set>
+    <set name="BlackMagic-EnhancingMagic">
+    </set>
+    <set name="BlackMagic-DarkMagic">
+      <neck>Dark Torque</neck>
+    </set>      
+    <set name="Stun">
+    </set>          
+  </group>
+
+</sets>
+
+<rules>
+  <!--Wait! Am I dead??-->
+  <if buffactive="terror|mute|stun">
+    <return />
+  </if>
+  
+  <!--Am I using a Job Ability??-->
+  <if type="JobAbility">
+    <if spell="Devotion|Martyr|Afflatus Solace|Afflatus Misery|Divine Seal|Divine Caress">
+      <equip set="%Type-%Spell" />
+      <equip when="aftercast" set="%Status" /> 
+    </if>
+    <else>
+      <equip set="%Type" />
+      <equip when="aftercast" set="%Status" /> 
+    </else>
+  </if><!--end type-->
+  
+  <!--Am I one of those WHMs and using a Weaponskill??-->
+  <elseif type="WeaponSkill">
+    <equip set="%Type" />
+    <equip when="aftercast" set="%Status" /> 
+  </elseif><!--end type-->
+  
+  <!--Am I casting Magic?-->
+  
+  <elseif type="WhiteMagic">
+    <if skill="DivineMagic">
+      <if spell="Repose">
+        <equip set="%Type-%Skill" />
+        <equip when="aftercast" set="%Status" /> 
+      </if>
+      <elseif spell="Holy*|Banish*">
+        <if casttimegt="3">
+          <equip set="fastcast" />
+          <equip when="midcast" set="%Type-%Skill-MAtk" />
+          <equip when="aftercast" set="%Status" /> 
+        </if>
+        <else>
+          <equip set="%Type-%Skill-MAtk" />
+          <equip when="aftercast" set="%Status" /> 
+        </else>
+      </elseif>
+      <else>
+        <if casttimegt="3">
+          <equip set="fastcast" />
+          <equip when="midcast" set="%Type-%Skill" />
+          <equip when="aftercast" set="%Status" /> 
+        </if>
+        <else>
+          <equip set="%Type-%Skill" />
+          <equip when="aftercast" set="%Status" /> 
+        </else>
+      </else>
+    </if><!--end skill-->
+    <elseif skill="EnfeeblingMagic">
+      <if spell="Dia*">
+        <equip set="%Type" />
+        <equip when="aftercast" set="%Status" /> 
+      </if>  
+      <else><!--addle silence slow paralyze-->
+        <if casttimegt="3">
+          <equip set="fastcast" />
+          <equip when="midcast" set="%Type-%Skill" />
+          <equip when="aftercast" set="%Status" /> 
+        </if>
+        <else>
+          <equip set="%Type-%Skill" />
+          <equip when="aftercast" set="%Status" /> 
+        </else>
+      </else>
+    </elseif><!--end skill-->
+    <elseif skill="EnhancingMagic">
+      <if spell="Haste|Erase"><!--spells that don't depend on skill-->
+        <equip set="fastcast" />
+        <equip when="aftercast" set="%Status" /> 
+      </if>
+      <elseif spell="Teleport*|Recall*"><!--if you are changing gear when you are zoning, you'll crash-->
+        <return />
+      </elseif>
+      <elseif spell="Stoneskin">
+        <equip set="fastcast-stoneskin" />
+        <equip when="midcast" set="%Spell" />
+        <equip when="aftercast" set="%Status" /> 
+      </elseif> 
+      <elseif spell="Bar*">
+        <equip when="precast|midcast" set="Bar" />
+        <equip when="aftercast" set="%Status" /> 
+      </elseif>
+      <elseif spell="Regen*">
+        <equip when="midcast" set="%Spell" />
+        <equip when="aftercast" set="%Status" /> 
+      </elseif>
+      <elseif spell="Protect*">
+        <equip when="precast" set="fastcast" />
+        <equip when="midcast" set="Protect" />
+        <equip when="aftercast" set="%Status" /> 
+      </elseif>
+      <else>
+        <if casttimegt="3">
+          <equip set="fastcast" />
+          <equip when="midcast" set="%Type-%Skill" />
+          <equip when="aftercast" set="%Status" /> 
+        </if>
+        <else>
+          <equip set="%Type-%Skill" />
+          <equip when="aftercast" set="%Status" /> 
+        </else>
+      </else>
+    </elseif><!--end skill-->
+    <elseif skill="HealingMagic">
+      <if spell="Cure*|Cura*">
+        <if casttimegt="3">
+          <equip set="fastcast-cure" />
+          <equip when="midcast" set="Cure" />
+          <equip when="aftercast" set="%Status" /> 
+        </if>
+        <else>
+          <equip set="Cure" />
+          <equip when="aftercast" set="%Status" /> 
+        </else>
+      </if>
+      <elseif spell="Reraise*|Raise*">
+        <equip set="Fastcast" />
+        <equip when="aftercast" set="%Status" /> 
+      </elseif>    
+      <else>
+        <if casttimegt="3">
+          <equip set="fastcast" />
+          <equip when="midcast" set="%Type-%Skill" />
+          <equip when="aftercast" set="%Status" /> 
+        </if>
+        <else>
+          <equip set="%Type-%Skill" />
+          <equip when="aftercast" set="%Status" /> 
+        </else>  
+      </else>
+    </elseif><!--end skill-->
+    
+    
+    <else>
+      <if casttimegt="3">
+        <equip set="fastcast" />
+        <equip when="midcast" set="%Type" />
+        <equip when="aftercast" set="%Status" /> 
+      </if>
+      <else>
+        <equip set="%Type" />
+        <equip when="aftercast" set="%Status" /> 
+      </else>  
+    </else>
+  </elseif><!--end type-->
+  
+  <elseif type="BlackMagic">
+    <if skill="DarkMagic">
+      <if spell="Stun">
+        <equip when="precast|midcast" set="%Spell" />
+        <equip when="aftercast" set="%Status" /> 
+      </if>
+      <elseif spell="Bio*">
+        <equip set="%Type" />
+        <equip when="aftercast" set="%Status" /> 
+      </elseif>
+      <else>
+        <if casttimegt="3">
+          <equip set="fastcast" />
+          <equip when="midcast" set="%Type-%Skill" />
+          <equip when="aftercast" set="%Status" /> 
+        </if>
+        <else>
+          <equip set="%Type-%Skill" />
+          <equip when="aftercast" set="%Status" /> 
+        </else>
+      </else>
+    </if><!--end skill-->
+    <elseif skill="ElementalMagic">
+      <if spell="Rasp|Shock|Choke|Burn|Drown|Frost">
+       <equip set="%Type-%Skill" />
+       <equip when="aftercast" set="%Status" /> 
+     </if>
+     <elseif spell="*helix">
+      <equip set="%Type" />
+      <equip when="aftercast" set="%Status" /> 
+    </elseif>
+    <else>
+      <if casttimegt="3">
+        <equip set="fastcast" />
+        <equip when="midcast" set="%Type-%Skill-MAtk" />
+        <equip when="aftercast" set="%Status" /> 
+      </if>
+      <else>
+        <equip set="%Type-%Skill-MAtk" />
+        <equip when="aftercast" set="%Status" /> 
+      </else>  
+    </else>
+  </elseif><!--end skill-->
+  <elseif skill="EnfeeblingMagic">
+    <if casttimegt="3">
+      <equip set="fastcast" />
+      <equip when="midcast" set="%Type-%Skill" />
+      <equip when="aftercast" set="%Status" /> 
+    </if>
+    <else>
+      <equip set="%Type-%Skill" />
+      <equip when="aftercast" set="%Status" /> 
+    </else>  
+  </elseif><!--end skill-->
+  <elseif skill="EnhancingMagic">
+    <if spell="Warp*|Escape|Retrace">
+      <return />
+    </if>
+  </elseif><!--end skill -->
+  <else>
+    <if casttimegt="3">
+      <equip set="fastcast" />
+      <equip when="midcast" set="%Type" />
+      <equip when="aftercast" set="%Status" /> 
+    </if>
+    <else>
+      <equip set="%Type" />
+    </else>  
+  </else>  
+</elseif><!--end type-->
+
+<equip when="aftercast" set="%Status" /> 
+</rules>
+</spellcast>
